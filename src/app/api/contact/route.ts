@@ -86,7 +86,7 @@ export async function POST(request: NextRequest) {
 
     if (resend && CONTACT_EMAIL) {
       await resend.emails.send({
-        from: `${SITE_NAME} <info@starsciencelab.com>`,
+        from: `${SITE_NAME} <noreply@mail.starsciencelab.com>`,
         to: CONTACT_EMAIL,
         replyTo: cleanEmail,
         subject: `New Contact from ${cleanFirstName} ${cleanLastName}`,
