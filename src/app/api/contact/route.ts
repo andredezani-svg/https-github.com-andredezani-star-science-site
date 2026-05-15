@@ -109,8 +109,9 @@ export async function POST(request: NextRequest) {
     )
   } catch (err) {
     console.error('[Contact Error]', err)
+    const message = err instanceof Error ? err.message : String(err)
     return NextResponse.json(
-      { error: 'Internal server error.' },
+      { error: 'Internal server error.', detail: message },
       { status: 500 }
     )
   }
