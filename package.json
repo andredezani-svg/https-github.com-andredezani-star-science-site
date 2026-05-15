@@ -27,6 +27,7 @@
     "@aws-sdk/s3-request-presigner": "^3.1045.0",
     "@mdx-js/loader": "^3.1.1",
     "@mdx-js/react": "^3.1.1",
+    "@neondatabase/serverless": "^1.1.0",
     "@next/mdx": "^16.2.6",
     "@sentry/nextjs": "^10.53.0",
     "@types/mdx": "^2.0.13",

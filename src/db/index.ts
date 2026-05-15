@@ -1,9 +1,9 @@
-import { drizzle } from 'drizzle-orm/node-postgres'
-import { Pool } from 'pg'
+import { drizzle } from 'drizzle-orm/neon-serverless'
+import { Pool } from '@neondatabase/serverless'
 
 const url = process.env.DATABASE_URL || 'postgresql://localhost:5432/starsciencelab'
 
-const pool = new Pool({ connectionString: url, ssl: process.env.DATABASE_URL ? { rejectUnauthorized: false } : false })
+const pool = new Pool({ connectionString: url })
 
 const db = drizzle(pool)
 
