@@ -8,8 +8,7 @@ export async function GET() {
     status: true,
     timestamp: new Date().toISOString(),
     uptime: process.uptime(),
-    dbUrl: process.env.DATABASE_URL ? 'present' : 'missing',
-    resendKey: process.env.RESEND_API_KEY ? 'present' : 'missing',
+
   }
 
   try {
